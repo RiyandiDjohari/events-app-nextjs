@@ -1,0 +1,158 @@
+header
+  height: 200px
+  padding: 1rem 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background: linear-gradient(305deg, #dbfff3, transparent)
+  .topNav
+    display: flex
+    justify-content: space-around
+    align-items: center
+  ul
+    display: flex
+    gap: 15px
+    li
+      list-style: none
+      font-weight: 600
+      font-size: 18px
+  h1
+    align-self: center
+    font-size: 2em
+    text-transform: uppercase
+
+main
+  width: 100%
+  max-width: 1450px
+  margin: auto
+  padding: 4rem 2rem
+
+.home-body
+  display: flex
+  flex-direction: column
+  justify-content: center
+  row-gap: 4rem
+  .card
+    display: flex
+    justify-content: space-evenly
+    &:nth-child(even)
+      direction: rtl
+    .card-image
+      object-fit: fill
+      border-radius: 8px
+    .card-content
+      display: flex
+      justify-content: center
+      flex-direction: column
+      gap: 20px
+      width: 50%
+      text-align: center
+
+.about-us
+  text-align: justify
+  p
+    font-size: 18px
+    margin: 20px 0
+  .about-us-title
+    margin-bottom: 20px
+  .about-us-list
+    margin-top: 20px  
+    list-style: none
+    padding-left: 60px
+
+.events-page
+  margin: auto
+  text-align: center
+  min-height: 60vh 
+  .title
+    margin-bottom: 20px
+    font-size: 40px
+  .content
+    display: flex
+    justify-content: center 
+    gap: 30px
+    .card
+      position: relative
+      img
+        border-radius: 8px
+        
+      h2
+        position: absolute
+        top: 80%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #fff
+        font-size: 34px
+        width: 300px
+        text-transform: uppercase
+        text-shadow: 1px 1px 20px black
+        text-align: center
+
+.cat-events
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 40px
+  .cat-events-title
+    font-size: 32px
+    text-transform: capitalize
+  .cat-events-content
+    display: flex
+    justify-content: center 
+    align-items: flex-start
+    flex-wrap: wrap
+    row-gap: 40px
+    column-gap: 30px
+    .card
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      text-align: center
+      height: 20rem
+      width: 21rem
+      column-gap: 20px
+      .card-title
+      .card-image
+        border-radius: 5px
+      .card-description
+        align-self: flex-end
+
+.single-event
+  margin: auto
+  text-align: center
+  min-height: 62vh
+  .title
+    font-size: 36px
+  .image
+    margin: 1rem 0
+    border-radius: 8px
+  .input-field
+    margin: 1rem 0
+    label
+      display: block
+      margin-bottom: 1rem
+      font-size: 18px
+      font-weight: bold
+      text-transform: uppercase
+    input, button
+      padding: 10px 15px
+      font-size: 16px
+      border-radius: 5px
+      border: 1px solid #000
+    input
+      min-width: 300px
+      background-color: #fff
+      color: #333
+    button
+      background-color: #dcfff3
+      color: #000
+      cursor: pointer
+
+footer
+  background-color: #222
+  color: #fff
+  padding: 20px
+  text-align: center
+  font-size: 18px
